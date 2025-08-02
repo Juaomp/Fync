@@ -2,9 +2,9 @@
   Fync 💸
 </h1>
 
-<p align="center">
+<h3 align="center">
   Seu próximo sistema de controle financeiro. Simples, prático e eficaz!
-</p>
+</h3>
 
 <p align="center">
   Em construção.
