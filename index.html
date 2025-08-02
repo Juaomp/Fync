@@ -5,14 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fync</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header id="header-principal">
-        <div>
+        <div class="header-container">
+            <button id="btn-menu" aria-label="Abrir menu"><i class="fas fa-bars"></i></button>
             <img src="Imagens/Fync.png" alt="Logo Fync" class="logo-header">
         </div>
     </header> 
     <aside id="menu-lateral">
+        <button id="btn-fechar-menu" aria-label="Fechar menu"><i class="fas fa-times"></i></button>
         <nav>
             <ul>
                 <li><a href="#dashboard">Dashboard</a></li>
@@ -21,6 +24,11 @@
                 <li><a href="#metas">Minhas Metas</a></li>
             </ul>
         </nav>
+        <div class="menu-footer">
+            <a href="https://www.instagram.com/fyncapp" target="_blank"><i class="fab fa-instagram"></i></a>
+            <p>&copy; 2025 Fync</p>
+            <p>Desenvolvido com 💙 por João Machado</p>
+        </div>
     </aside> 
     <main>
         <section id="dashboard">
@@ -43,10 +51,5 @@
             <p>Defina e acompanhe suas metas financeiras.</p>
         </section>
     </main>
-    <footer id="footer-principal">
-        <p>&copy; 2025 Fync | Todos os direitos reservados.</p>
-        <p>Desenvolvido com 💙 por João Machado</p>
-        <a href="https://www.instagram.com/fyncapp" target="_blank"><i class="fab fa-instagram"></i></a>
-    </footer>
 </body>
 </html>
