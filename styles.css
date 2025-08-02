@@ -7,7 +7,6 @@ body {
 
 #header-principal {
     background-color: white;
-    padding: 1px;
     text-align: center;
     border-bottom: 1px solid gainsboro;
 }
@@ -16,21 +15,32 @@ body {
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 0.5rem 1rem;
+    margin: 0;
+}
+
+#btn-menu {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #001D3D;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 1100;
+    transition: left 0.3s;
+}
+
+#btn-menu.menu-aberto {
+    left: 261px;
 }
 
 .fas.fa-bars {
     color: #001D3D;
     font-size: 1.75rem;
-}
-
-.header-container .logo-header {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
 }
 
 .logo-header {
@@ -58,24 +68,29 @@ body {
     transform: translateX(0);
 }
 
-#btn-menu {
-    background: none;
-    border: none;
-    color: #001D3D;
-    font-size: 2rem;
-    cursor: pointer;
-    margin-right: 1rem;
+#menu-lateral ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-#btn-fechar {
-    background: none;
-    border: none;
-    color: #fff;
-    font-size: 2rem;
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    cursor: pointer;
+#menu-lateral li {
+    margin: 1rem 0;
+}
+
+#menu-lateral a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: block;
+    padding: 0.5rem 1.5rem;
+    transition: background 0.6s, color 0.6s;
+}
+
+#menu-lateral a:hover {
+    background-color: white;
+    color: #001D3D;
+    border-radius: 2px;
 }
 
 .menu-footer {
@@ -102,6 +117,5 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    text-fill-color: transparent;
     transition: color 0.2s, background 0.2s;
 }
