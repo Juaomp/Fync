@@ -8,4 +8,3 @@
 
 <p align="center">
   Em construção.
-</p>
